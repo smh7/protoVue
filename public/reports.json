@@ -1,0 +1,32 @@
+[
+  {
+      "id": 1,
+      "title": "On experts",
+      "author": "Neils Bohr",
+      "description": "An expert is a person who has made all the mistakes that can be made in a very narrow field."
+  },
+  {
+      "id": 2,
+      "title": "Explaining a Joke",
+      "author": "E.B. White",
+      "description": "Explaining a joke is like dissecting a frog. You understand it better but the frog dies in the process."
+  },
+  {
+      "id": 3,
+      "title": "On the benefits of hearing something",
+      "author": "Kay Ryan",
+      "description": "I’m a person who really understands things better through reading. When I hear something, it just goes right past me. So I’m in the habit of reading some poems twice, Thank God I’m not Milton, or this would be the last reading of the year, not just the season."
+  },
+  {
+      "id": 5,
+      "title": "Where is this all leading",
+      "author": "Carol Anderson",
+      "description": "Only I can change my life. No one can do it for me."
+  },
+  {
+      "id": 6,
+      "title": "Where is this all leading",
+      "author": "Carol Anderson",
+      "description": "Only I can change my life. No one can do it for me."
+  }
+]
