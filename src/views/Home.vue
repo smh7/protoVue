@@ -8,15 +8,36 @@
 
 <script>
 // @ is an alias to /src
-import ReportCard from '@/components/ReportCard.vue'
+import ReportCard from '@/components/ReportCard.vue';
+import axios from 'axios';
 
+var myConfig = {
+  mode: 'no-cors',
+  headers: {
+    'Access-Control-Allow-Origin': '*',
+    Authorization: "Bearer" + "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MDA1OTgwMDcsImlzcyI6Imhvd2FyZC5pbmR1c3RyaWVzIiwiYXVkIjoicmVhZGVycyJ9.rsieOn1nJZxMtkCtZGEJyv_-Vs3VzTzSQhrNnykFqPg",
+    'Content-Type':'application/json'
+  },
+  credentials: 'same-origin'
+ 
+}
 
 export default {
   name: "Home",
   components: { "report-card": ReportCard },
+  created(){
+        axios
+          .get('https://localhost:44366/api/quotes', myConfig)
+          .then(res=> console.log(res))
+          .catch(error => console.log(error))
+  },
   mounted(){
-    this.fetchData();
+    //this.fetchData();
+    // axios
+    //   .get('https://localhost:44366/api/quotes')
+    //   .then(response => (this.reports = response))
 
+  
   },
   data(){
     return {
@@ -25,13 +46,14 @@ export default {
   },
   methods: {
     // should be some error handling and might switch to axios
-    async fetchData(){
-      const res = await fetch("reports.json");
-      const val = await res.json();
-      this.reports = val;
-      console.log(val);
+    // async fetchData(){
+    //   const res = await fetch("reports.json");
+    //   const val = await res.json();
+    //   this.reports = val;
+    //   console.log(val);
+    // }
+    // let's try this with axios
 
-    }
   }
 };
 </script>
