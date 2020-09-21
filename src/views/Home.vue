@@ -15,7 +15,7 @@ var myConfig = {
   mode: 'no-cors',
   headers: {
     'Access-Control-Allow-Origin': '*',
-    Authorization: "Bearer" + "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MDA1OTgwMDcsImlzcyI6Imhvd2FyZC5pbmR1c3RyaWVzIiwiYXVkIjoicmVhZGVycyJ9.rsieOn1nJZxMtkCtZGEJyv_-Vs3VzTzSQhrNnykFqPg",
+    Authorization: "Bearer " + "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MDA3MDU4NDksImlzcyI6Imhvd2FyZC5pbmR1c3RyaWVzIiwiYXVkIjoicmVhZGVycyJ9.JP64XcVu72ELnY-dgbun92IYk6_3epQrzJ-Ovq846yA",
     'Content-Type':'application/json'
   },
   credentials: 'same-origin'
@@ -28,7 +28,7 @@ export default {
   created(){
         axios
           .get('https://localhost:44366/api/quotes', myConfig)
-          .then(res=> console.log(res))
+          .then(res=> console.log('res', res))
           .catch(error => console.log(error))
   },
   mounted(){
