@@ -12,8 +12,8 @@
       >
       <!-- <b-card-text>{{description}}</b-card-text> -->
     <b-list-group flush>
-      <b-list-group-item class="h2" :description="description">{{description}}</b-list-group-item>
-      <b-list-group-item class="h5" :author="author"><strong>{{author}}</strong></b-list-group-item>
+      <b-list-group-item class="h2" :description ="description">{{description}}</b-list-group-item>
+      <b-list-group-item class="h5" :author ="author"><strong>{{author}}</strong></b-list-group-item>
     </b-list-group>
         <b-button variant="primary">Apply</b-button>
       </b-card>
