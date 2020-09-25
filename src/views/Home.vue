@@ -15,7 +15,7 @@ var myConfig = {
   mode: 'no-cors',
   headers: {
     'Access-Control-Allow-Origin': '*',
-    Authorization: "Bearer " + "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MDA3MTAxNjksImlzcyI6Imhvd2FyZC5pbmR1c3RyaWVzIiwiYXVkIjoicmVhZGVycyJ9.V-egwzsWNRYW0EIwaGdR9pRnCdHN4iKq5nSu7NHlbwY",
+    Authorization: "Bearer " + "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MDA3ODYyNTEsImlzcyI6Imhvd2FyZC5pbmR1c3RyaWVzIiwiYXVkIjoicmVhZGVycyJ9.jNLGjlcRPrqttMpjG80ZtJFSpR3uYfMWQ0yVZSEv9DA",
     'Content-Type':'application/json'
   },
   credentials: 'same-origin'
